@@ -13,12 +13,16 @@
     height: 300px;
     margin-left: 100px;
     margin-right: 100px;
-
+   
 }
 .item{
     width:50%;
    text-align: center;
    flex-basis: 500px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+   height: 150px;
    
    
 }
@@ -27,6 +31,7 @@ img{
 }
 .item1{
    align-self: flex-start;
+   
 }
 .item2{
    align-self: flex-end;
@@ -39,4 +44,27 @@ img{
 }
 .item5{
  align-self: flex-start;
+}
+ .item p{
+    position: absolute;
+    top:40%;
+    left:40%;
+    align-content: center;
+    transition: opacity 0.5s ease;
+
+}
+.item p{
+    opacity: 0;
+    z-index: 1;
+}
+.item:hover img{
+    opacity: 0;
+    cursor: pointer;
+}
+.item:hover p{
+    color: pink;
+    opacity: 1;
+    cursor: pointer;
+    font-size: large;
+
 }
