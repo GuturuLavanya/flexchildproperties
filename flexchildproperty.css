@@ -62,7 +62,7 @@ img{
     cursor: pointer;
 }
 .item:hover p{
-    color: pink;
+    color: blue;
     opacity: 1;
     cursor: pointer;
     font-size: large;
